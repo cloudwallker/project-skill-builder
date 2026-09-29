@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "public_discovery": "not_run",
+  "initial_candidates": [],
+  "deeply_read": [],
+  "comparison_fields": ["scope", "useful_practices", "conflicts", "dependencies", "license_evidence", "version_evidence", "advantages", "limitations", "decision", "reason"]
+}

@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-29",
+  "runtime": "Python 3.9.25",
+  "evaluation": "exploratory; one independent run per coding condition, same fixture and confirmed task",
+  "synthetic_project": true,
+  "coding_task": "Preserve summarize(path) and stdlib runtime; use exact Decimal totals and trimmed categories; invalid category, amount or columns cause a clear row-numbered ValueError; header-only returns empty. Add tests and run unittest.",
+  "groups": {
+    "initial_fixture": {
+      "command": "python evals/grade_csv.py examples/csv-tool",
+      "exit_code": 0,
+      "tests": [
+        {
+          "id": "public_api",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "exact_decimal_arithmetic",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "category_whitespace",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "header_only",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "malformed_amount",
+          "passed": false,
+          "detail": "expected ValueError, received InvalidOperation"
+        },
+        {
+          "id": "empty_amount",
+          "passed": false,
+          "detail": "expected ValueError, received InvalidOperation"
+        },
+        {
+          "id": "missing_category",
+          "passed": false,
+          "detail": "invalid CSV must fail instead of returning a result"
+        },
+        {
+          "id": "whitespace_category",
+          "passed": false,
+          "detail": "invalid CSV must fail instead of returning a result"
+        },
+        {
+          "id": "missing_cell",
+          "passed": false,
+          "detail": "expected ValueError, received TypeError"
+        },
+        {
+          "id": "missing_amount_header",
+          "passed": false,
+          "detail": "invalid CSV must fail instead of returning a result"
+        },
+        {
+          "id": "missing_category_header",
+          "passed": false,
+          "detail": "expected ValueError, received KeyError"
+        },
+        {
+          "id": "stdlib_runtime",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        }
+      ],
+      "totals": {
+        "total": 12,
+        "passed": 5,
+        "failed": 7
+      }
+    },
+    "direct_prompt": {
+      "command": "python evals/grade_csv.py .work/evals/coding-direct/project",
+      "exit_code": 0,
+      "tests": [
+        {
+          "id": "public_api",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "exact_decimal_arithmetic",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "category_whitespace",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "header_only",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "malformed_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "empty_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "whitespace_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_cell",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_amount_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "stdlib_runtime",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        }
+      ],
+      "totals": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0
+      }
+    },
+    "generated_skill": {
+      "command": "python evals/grade_csv.py .work/evals/coding-generated/project",
+      "exit_code": 0,
+      "tests": [
+        {
+          "id": "public_api",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "exact_decimal_arithmetic",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "category_whitespace",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "header_only",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "malformed_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "empty_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "whitespace_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_cell",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_amount_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "stdlib_runtime",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        }
+      ],
+      "totals": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0
+      }
+    },
+    "best_local_fixture_skill": {
+      "command": "python evals/grade_csv.py .work/evals/coding-existing/project",
+      "exit_code": 0,
+      "tests": [
+        {
+          "id": "public_api",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "exact_decimal_arithmetic",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "category_whitespace",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "header_only",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "malformed_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "empty_amount",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "whitespace_category",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_cell",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_amount_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "missing_category_header",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        },
+        {
+          "id": "stdlib_runtime",
+          "passed": true,
+          "detail": "documented behavior satisfied"
+        }
+      ],
+      "totals": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0
+      }
+    }
+  },
+  "metrics_unavailable": [
+    "reliable total tokens",
+    "comparable agent wall time"
+  ],
+  "limitations": [
+    "No statistical performance claim",
+    "Subagents share inherited model settings but have separate contexts",
+    "Public retrieval smoke used three known source leads",
+    "Local fixture skill is not a third-party competitor"
+  ],
+  "public_sources": [
+    {
+      "id": "vercel-find-skills",
+      "url": "https://github.com/vercel-labs/skills/blob/3694740352eeef5cdd689af694c485f1ff62eec3/skills/find-skills/SKILL.md",
+      "path": "skills/find-skills/SKILL.md",
+      "commit": "3694740352eeef5cdd689af694c485f1ff62eec3",
+      "license": "MIT",
+      "license_url": "https://github.com/vercel-labs/skills/blob/3694740352eeef5cdd689af694c485f1ff62eec3/LICENSE",
+      "decision": "rejected",
+      "read_at": "2026-09-29T09:48:05Z"
+    },
+    {
+      "id": "anthropic-skill-creator",
+      "url": "https://github.com/anthropics/skills/blob/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/skill-creator/SKILL.md",
+      "path": "skills/skill-creator/SKILL.md",
+      "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/anthropics/skills/blob/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/skill-creator/LICENSE.txt",
+      "decision": "reference",
+      "read_at": "2026-09-29T09:48:05Z"
+    },
+    {
+      "id": "obra-writing-skills",
+      "url": "https://github.com/obra/superpowers/blob/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/writing-skills/SKILL.md",
+      "path": "skills/writing-skills/SKILL.md",
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "license": "MIT",
+      "license_url": "https://github.com/obra/superpowers/blob/8ca22dba9a94f28898bbce59f2537ff4d87c747d/LICENSE",
+      "decision": "reference",
+      "read_at": "2026-09-29T09:48:05Z"
+    }
+  ],
+  "public_retrieval_status": "passed",
+  "clarification": {
+    "status": "awaiting_answer",
+    "critical_missing_policy": "缺类别、坏金额、缺列等坏行应立即失败，还是跳过后报告",
+    "checks": {
+      "focused_question_in_simulated_response": true,
+      "missing_policy_not_assumed": true,
+      "user_answer_fabricated": false,
+      "formal_bundle_written": false,
+      "question_tool_called": false
+    }
+  },
+  "refresh": {
+    "status": "passed",
+    "checks": {
+      "first_attempt_current_hashes_unchanged_before_retry": true,
+      "first_candidate_complete_actual_bytes": true,
+      "manual_edit_detected": true,
+      "clean_initial_hashes_match": true,
+      "real_contract_changes_snapshotted": true,
+      "new_acceptance_script_syntax": true,
+      "initial_proposal_valid": true,
+      "sealed_proposal_valid": true,
+      "conflict_preview_status": true,
+      "conflict_preview_read_only_actual_bytes": true,
+      "conflict_apply_status": true,
+      "entire_current_preserved_actual_bytes": true,
+      "manual_conflict_path_reported": true,
+      "separate_complete_candidate_actual_bytes": true,
+      "conflict_no_backup_or_replacement": true,
+      "clean_preview_status": true,
+      "clean_preview_read_only_actual_bytes": true,
+      "clean_apply_status": true,
+      "user_overrides_preserved_actual_bytes": true,
+      "user_added_preserved_actual_bytes": true,
+      "backup_matches_complete_original_actual_bytes": true,
+      "name_preserved": true,
+      "all_proposed_managed_files_applied_actual_bytes": true,
+      "integer_cents_rules_updated": true,
+      "integer_cents_cases_updated": true,
+      "generated_behavior_truthful_not_run": true,
+      "applied_clean_valid": true,
+      "proposal_not_changed_by_refresh_actual_bytes": true,
+      "product_code_not_changed_actual_bytes": true
+    },
+    "command_results": [
+      {
+        "id": "current-validation-before",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "clean-validation-before",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "snapshot",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "snapshot-compare",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "acceptance-script-syntax",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "initial-seal",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "initial-validate",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "final-seal-after-metadata-update",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "final-validate",
+        "exit_code": 0,
+        "status": "passed"
+      },
+      {
+        "id": "conflict-preview-default",
+        "exit_code": 1,
+        "status": "conflict"
+      },
+      {
+        "id": "conflict-apply-authorized",
+        "exit_code": 1,
+        "status": "conflict"
+      },
+      {
+        "id": "clean-preview-default",
+        "exit_code": 0,
+        "status": "preview"
+      },
+      {
+        "id": "clean-apply-authorized",
+        "exit_code": 0,
+        "status": "applied"
+      },
+      {
+        "id": "clean-validation-after",
+        "exit_code": 0,
+        "status": "passed"
+      }
+    ],
+    "capture_limit": "First Windows subprocess output capture had an encoding mismatch; original files stayed intact. Retried with explicit UTF-8 and retained the failed capture record locally.",
+    "root_independent_checks": {
+      "current_hash_inventory_unchanged": true,
+      "user_overrides_preserved": true,
+      "user_added_preserved": true,
+      "integer_cents_workflow": true
+    }
+  },
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "total": 93,
+    "passed": 91,
+    "failed": 0,
+    "skipped": 2,
+    "skip_reasons": [
+      "POSIX-only file-name scenario on Windows",
+      "Temporary filesystem has no 8.3 short alias"
+    ]
+  }
+}

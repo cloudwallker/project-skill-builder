@@ -1,0 +1,12 @@
+.work/
+dist/
+docs/superpowers/
+.codex/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+.project-skill-builder-history/

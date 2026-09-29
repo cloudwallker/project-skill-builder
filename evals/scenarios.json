@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "scenarios": [
+    {"id": "clarification", "task": "为这个 CSV 汇总项目建立一个反复维护汇总功能的项目 skill。坏行处理政策目前未定，请先界定需求。", "expected": ["读取项目", "只追问真正未知的坏行政策", "不把文件可读当需求已完整"]},
+    {"id": "composition", "task": "结合三个本地合成候选，为 CSV 工具建立可反复维护的 skill；项目 README 是约束依据。", "expected": ["采用 Decimal 与标准库", "拒绝 pandas 依赖与浮点", "拒绝静默跳过错误", "记录候选取舍", "fixture 不冒充公开检索"]},
+    {"id": "refresh", "task": "金额输入单位改为整数分。手动刷新 skill，保留 user-overrides 和人工修改。", "expected": ["更新金额假设", "保留人工补充", "同处冲突保留原件", "报告变化"]}
+  ]
+}

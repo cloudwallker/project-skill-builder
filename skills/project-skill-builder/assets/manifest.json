@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "name": "project-task",
+  "version": "0.1.0",
+  "sources": [],
+  "stages": {
+    "requirements": "not_run",
+    "discovery": "not_run",
+    "reading": "not_run",
+    "license": "not_run",
+    "static": "not_run",
+    "behavior": "not_run"
+  },
+  "managed_files": {}
+}

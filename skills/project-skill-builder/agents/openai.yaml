@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Skill Builder"
+  short_description: "Build project skills through research and comparison"
+  default_prompt: "Use $project-skill-builder to clarify this project's recurring task, compare relevant public skills, and create a self-contained project skill with provenance and validation."
+policy:
+  allow_implicit_invocation: false

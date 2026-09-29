@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "cases": [],
+  "case_fields": ["id", "task", "initial_state", "expected_observations", "command", "actual_result"]
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+  <title id="title">Project Skill Builder workflow</title>
+  <desc id="desc">Clarify recurring tasks, research and compare sources, compose a project skill, then validate and manually refresh while protecting edits.</desc>
+  <rect width="960" height="460" rx="22" fill="#f5f7fb"/>
+  <g font-family="Arial, sans-serif" fill="#152238">
+    <text x="40" y="55" font-size="32" font-weight="700">From project needs to a reusable skill</text>
+    <rect x="40" y="90" width="410" height="130" rx="16" fill="#e4ecff" stroke="#7095db"/>
+    <text x="66" y="140" font-size="32" font-weight="700">1. Clarify</text>
+    <text x="66" y="182" font-size="26">Task, constraints, success</text>
+    <rect x="510" y="90" width="410" height="130" rx="16" fill="#e3f4ed" stroke="#75ad95"/>
+    <text x="536" y="140" font-size="32" font-weight="700">2. Research</text>
+    <text x="536" y="182" font-size="26">Read, compare, verify license</text>
+    <rect x="510" y="280" width="410" height="130" rx="16" fill="#fff1d7" stroke="#c9a45e"/>
+    <text x="536" y="330" font-size="32" font-weight="700">3. Compose</text>
+    <text x="536" y="372" font-size="26">Workflow + project evidence</text>
+    <rect x="40" y="280" width="410" height="130" rx="16" fill="#ede5ff" stroke="#9d87c8"/>
+    <text x="66" y="330" font-size="32" font-weight="700">4. Check &amp; refresh</text>
+    <text x="66" y="372" font-size="26">Run checks, protect edits</text>
+  </g>
+  <g fill="#405879" stroke="#405879" stroke-width="4">
+    <path d="M 458 155 H 495"/><path d="M 486 146 L 497 155 L 486 164" fill="none"/>
+    <path d="M 715 230 V 263"/><path d="M 706 254 L 715 266 L 724 254" fill="none"/>
+    <path d="M 500 345 H 465"/><path d="M 474 336 L 462 345 L 474 354" fill="none"/>
+  </g>
+</svg>
