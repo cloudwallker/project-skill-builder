@@ -8,6 +8,8 @@ A Codex skill that clarifies a project's recurring task, researches public skill
 
 The agent interviews and researches; small Python scripts validate bundles, hash selected project files, and protect manual edits during refresh. This is an exploratory tool for software projects. It requires Codex, Python 3.9+, and a browsing or repository tool for public research. It does not include a hosted catalog or search API.
 
+![project-skill-builder](docs/images/cartoon-infographic.png)
+
 ## Install
 
 Download or clone this repository. From its root, install into an **existing project**:

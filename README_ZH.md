@@ -8,6 +8,8 @@
 
 Codex 负责沟通、检索与整合；Python 脚本负责包校验、项目文件快照和刷新时保护人工修改。这是面向软件项目的探索性工具，需要 Codex、Python 3.9+，以及用于公开检索的浏览或仓库工具；项目自身不提供搜索服务。
 
+![project-skill-builder](docs/images/cartoon-infographic.png)
+
 ## 安装
 
 下载或克隆本仓库，在仓库根目录执行，目标须为**已经存在的项目目录**：
